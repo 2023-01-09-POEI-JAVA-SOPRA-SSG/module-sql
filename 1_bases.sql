@@ -43,3 +43,23 @@ VALUES
     ('Lorenzo','Biscaino','lorenzo.bis@gmail.com','06677764'),
     ('Marina','Garin','marina.garin@gmail.com','077446374'),
     ('Hamdi','Dalaa','hamdi.dalaa@gmail.com','064666444');
+
+INSERT INTO clients(first_name,last_name,email,phone_number) 
+VALUES('André','Toto','andre.toto@yahoo.fr','0606646464'),
+('Luc','Dada','luc.dada@yahoo.com','0699646464'),
+('Rudy','Tata','rudy.tata@hotmail.fr','0299646464'),
+('Chris','Lislis','chr.lis@orange.fr','0799646464');
+
+-- 6. Limiter les résultats avec la cluse `WHERE`
+-- SELECT * FROM clients WHERE first_name='Christian';
+-- SELECT * FROM clients WHERE last_name='Charles';
+
+-- 7. Trouver tous les clients dont les noms commencent par "Chris"
+SELECT * FROM clients WHERE first_name LIKE 'Chris%';
+
+-- 8. Trouver tous les clients dont les email se terminent par "yahoo.fr"
+SELECT * FROM clients WHERE email LIKE '%yahoo.fr';
+
+-- 9. Trouver tous les client dont les prenom sont 'Luc' et qui possèdent des
+-- adresse yahoo
+SELECT * FROM clients WHERE first_name='Luc' AND email LIKE '%yahoo.%';
