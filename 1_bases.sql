@@ -1,5 +1,6 @@
 -- 1. Créer une table
-CREATE TABLE clients(
+-- IF NOT EXISTS : Ne créer la table que si elle n'existe pas.
+CREATE TABLE IF NOT EXISTS clients(
   first_name VARCHAR(50),
   last_name VARCHAR(50),
   email VARCHAR(100),
@@ -21,3 +22,12 @@ CREATE TABLE clients(
 
 -- 3. Supprimer une table
 -- DROP TABLE clients;
+
+
+-- Table véhicules
+CREATE TABLE vehicules(
+    matricule VARCHAR(12) PRIMARY KEY,
+    marque VARCHAR(20) NOT NULL,
+    modele VARCHAR(20) UNIQUE NOT NULL,
+    anne_fabrication INT NOT NULL
+);
