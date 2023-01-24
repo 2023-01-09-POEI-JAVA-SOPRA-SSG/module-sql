@@ -36,3 +36,10 @@ CREATE TABLE vehicules(
 -- 4. Insérer une seul enregistrement
 INSERT INTO clients(first_name,last_name,email,phone_number) 
 VALUES('Irène','Charles','irene.charles@gmail.com','0666646464');
+
+-- 5. Insérer plusieurs enregistrements
+INSERT INTO clients(first_name,last_name,email,phone_number) 
+VALUES
+    ('Lorenzo','Biscaino','lorenzo.bis@gmail.com','06677764'),
+    ('Marina','Garin','marina.garin@gmail.com','077446374'),
+    ('Hamdi','Dalaa','hamdi.dalaa@gmail.com','064666444');
