@@ -31,3 +31,8 @@ CREATE TABLE vehicules(
     modele VARCHAR(20) UNIQUE NOT NULL,
     anne_fabrication INT NOT NULL
 );
+
+
+-- 4. Insérer une seul enregistrement
+INSERT INTO clients(first_name,last_name,email,phone_number) 
+VALUES('Irène','Charles','irene.charles@gmail.com','0666646464');
