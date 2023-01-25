@@ -71,3 +71,5 @@ DELETE FROM clients; -- Si vous voulez aller en prison
 DELETE FROM clients WHERE id=14;
 DELETE FROM clients WHERE email LIKE '%@toto.fr' OR phone_number LIKE '+299';
 
+-- 11. Mettre à jour une ligne
+UPDATE clients SET last_name='Zoto',phone_number='074747474' WHERE id=10;
