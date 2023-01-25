@@ -21,7 +21,7 @@ CREATE TABLE clients(
 );
 
 -- 3. Supprimer une table
--- DROP TABLE clients;
+DROP TABLE clients;
 
 
 -- Table véhicules
