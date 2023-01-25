@@ -77,3 +77,7 @@ UPDATE clients SET last_name='Zoto',phone_number='074747474' WHERE id=10;
 -- 12. Ajouter une ligne(middle_name)
 ALTER table clients
     ADD COLUMN middle_name VARCHAR(50);
+
+-- 13. Renommer une colonne
+ALTER TABLE clients
+    RENAME COLUMN phone_number TO phone;
