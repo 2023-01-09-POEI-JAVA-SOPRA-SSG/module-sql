@@ -73,3 +73,7 @@ DELETE FROM clients WHERE email LIKE '%@toto.fr' OR phone_number LIKE '+299';
 
 -- 11. Mettre à jour une ligne
 UPDATE clients SET last_name='Zoto',phone_number='074747474' WHERE id=10;
+
+-- 12. Ajouter une ligne(middle_name)
+ALTER table clients
+    ADD COLUMN middle_name VARCHAR(50);
