@@ -85,3 +85,7 @@ ALTER TABLE clients
 -- 14. Supprimer une clonne colonne
 ALTER TABLE clients
     DROP COLUMN abc;
+
+-- 15. Ajouter une contrainte de non nullité
+ALTER TABLE clients
+    ALTER COLUMN abc SET NOT NULL;
