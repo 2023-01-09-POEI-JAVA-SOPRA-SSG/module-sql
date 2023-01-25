@@ -63,3 +63,11 @@ SELECT * FROM clients WHERE email LIKE '%yahoo.fr';
 -- 9. Trouver tous les client dont les prenom sont 'Luc' et qui possèdent des
 -- adresse yahoo
 SELECT * FROM clients WHERE first_name='Luc' AND email LIKE '%yahoo.%';
+
+
+
+-- 10. Supprimer un client
+DELETE FROM clients; -- Si vous voulez aller en prison
+DELETE FROM clients WHERE id=14;
+DELETE FROM clients WHERE email LIKE '%@toto.fr' OR phone_number LIKE '+299';
+
