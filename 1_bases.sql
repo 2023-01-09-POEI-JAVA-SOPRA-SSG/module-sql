@@ -81,3 +81,7 @@ ALTER table clients
 -- 13. Renommer une colonne
 ALTER TABLE clients
     RENAME COLUMN phone_number TO phone;
+
+-- 14. Supprimer une clonne colonne
+ALTER TABLE clients
+    DROP COLUMN abc;
