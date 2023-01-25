@@ -6,6 +6,11 @@ CREATE TABLE telephones (
     units_sold INT NOT NULL CHECK (units_sold >= 0)
 );
 
+-- 1.Ecrire une requête pour liste tous les modèles de téléphones
+SELECT name FROM telephones;
+
+-- 2. Ecrire une requête pour lister tous les telephone(name, manufacturer) de tous les téléphone dont le prix est supérieur à 200€
+SELECT name,manufacturer,price FROM telephones WHERE price>200;
 
 -- 3. Ecrire une requête pour lister tous les telephone(name, manufacturer) de tous les téléphone dont le prix est varie entre 150 et 200€
 SELECT name, manufacturer FROM telephones WHERE price>=150 AND price<=200;
@@ -29,3 +34,6 @@ SELECT COUNT(*) FROM telephones WHERE LOWER(manufacturer)=LOWER('Apple');
 -- price => prix, 
 -- units_sold => quantité vendue
 SELECT name AS modele, manufacturer AS fabricant, price AS prix, units_sold AS 'quantité vendu' FROM telephones;
+
+
+-- 

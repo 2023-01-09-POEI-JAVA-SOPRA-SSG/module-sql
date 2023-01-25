@@ -89,3 +89,9 @@ ALTER TABLE clients
 -- 15. Ajouter une contrainte de non nullité
 ALTER TABLE clients
     ALTER COLUMN abc SET NOT NULL;
+
+-- 16. Oder by
+
+-- 17. Associations
+
+-- 18. SQL jointure
